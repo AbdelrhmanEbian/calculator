@@ -30,7 +30,7 @@ function calc(e) {
     text.value=eval(text.value)
   }
   catch(err){
-      text.value="Error"
+      text.value=""
     
   }
 
