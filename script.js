@@ -22,18 +22,16 @@ function clea() {
 
 }
 
-function calc() {
+function calc(e) {
+  if (text.value == "") {
+    e.preventDefault()
+  }
   try{
     text.value=eval(text.value)
   }
   catch(err){
-    if (text.value == "") {
-      text.value=""
-    }
-    if (text.value != "") {
-      
       text.value="Error"
-    }
+    
   }
 
 }
